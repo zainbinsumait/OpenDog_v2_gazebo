@@ -1,0 +1,55 @@
+full_gaz1_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  FRH_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FRH
+    pid: {p: 50.0, i: 0.01, d: 5.0}
+  FRU_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FRU
+    pid: {p: 50.0, i: 0.01, d: 5.0}
+  FRL_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FRL
+    pid: {p: 50.0, i: 0.01, d: 5.0}
+  FLH_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FLH
+    pid: {p: 50.0, i: 0.01, d: 5.0}
+  FLU_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FLU
+    pid: {p: 50.0, i: 0.01, d: 5.0}
+  FLL_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FLL
+    pid: {p: 50.0, i: 0.01, d: 5.0}
+  BLH_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: BLH
+    pid: {p: 50.0, i: 0.01, d: 5.0}
+  BLU_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: BLU
+    pid: {p: 50.0, i: 0.01, d: 5.0}
+  BLL_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: BLL
+    pid: {p: 50.0, i: 0.01, d: 5.0}
+  BRH_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: BRH
+    pid: {p: 50.0, i: 0.01, d: 5.0}
+  BRL_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: BRL
+    pid: {p: 50.0, i: 0.01, d: 5.0}
+  BRU_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: BRU
+    pid: {p: 50.0, i: 0.01, d: 5.0}

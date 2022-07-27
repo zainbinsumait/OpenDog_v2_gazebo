@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find full_budy)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="full_gaz1_controller" args="FRH_position_controller FRU_position_controller FRL_position_controller FLH_position_controller FLU_position_controller FLL_position_controller BLH_position_controller BLU_position_controller BLL_position_controller BRH_position_controller BRL_position_controller BRU_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/full_gaz1/joint_states"/>
+</node>
+
+</launch>
