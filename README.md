@@ -93,7 +93,10 @@ https://www.youtube.com/watch?v=lo1bXm8Aoqc
 **
 
 
+important package to install :
 
+ros-foxy-xacro
+ros-foxy-joint-state-publisher-gui
 
 
 Gazebo files Changement :
