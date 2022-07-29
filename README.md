@@ -1,6 +1,16 @@
 **
 This project is an extension of the original one in the  repository OpenDog_v2_modification. a simulation of the same model of the robot in gazebo using ROS noetic and ROS2 foxy.
 
+
+useful links :
+
+
+[https://navigation.ros.org/setup_guides/urdf/setup_urdf.html](https://navigation.ros.org/setup_guides/urdf/setup_urdf.html)
+
+https://github.com/ros-simulation/gazebo_ros_pkgs/wiki/ROS-2-Migration:-Spawn-and-delete
+
+**https://medium.com/creating-a-gazebo-simulation-with-ros2-for-your/introduction-8daf6efa12f4**
+
 Steps to run this gazebo file :
 
 1.      First install ROS noetic or ROS2 foxy in your machine
@@ -70,6 +80,17 @@ ros2 launch full_gaz1_description gazebo.launch
 ``` 
 
 the controller is not working well with me because of some issues in the ros_control and gazebo_ros_control packages. although, there's the controller configuration in the files and you can try again with it here are some useful links :
+**
+
+https://control.ros.org/master/doc/getting_started/getting_started.html
+
+[https://github.com/ros-controls/gazebo_ros2_control](https://github.com/ros-controls/gazebo_ros2_control)
+
+  
+
+https://www.youtube.com/watch?v=lo1bXm8Aoqc
+
+**
 
 
 
@@ -77,6 +98,7 @@ the controller is not working well with me because of some issues in the ros_con
 
 Gazebo files Changement :
 
+while using the fusion 360 plugin to generate gazebo file of the model we have small issues in these files while combiling them using ros noetic. to solve these problems follow these steps :
   
 
 1.  in the file .gazebo in the URDF folder change the parameters mu1 and mu2 of the base link to a high number like 1500000000000 to increase the friction of the base with the ground so it doesn't move
@@ -167,17 +189,3 @@ after creating a new file you have to do the compiling commands in step 3 again.
 
   
   
-  
-  
-
-ROS2: Foxy 
-
-source :
-
-[https://navigation.ros.org/setup_guides/urdf/setup_urdf.html](https://navigation.ros.org/setup_guides/urdf/setup_urdf.html)
-
-https://github.com/ros-simulation/gazebo_ros_pkgs/wiki/ROS-2-Migration:-Spawn-and-delete
-
-sudo apt install ros-<ros2-distro>-xacro
-
-**
