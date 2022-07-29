@@ -198,3 +198,10 @@ after creating a new file you have to do the compiling commands in step 3 again.
 
   
   
+installing the plugin in fusion 360 :
+ROS gazebo files :
+https://github.com/zainbinsumait/fusion2urdf
+
+ROS2 gazebo files :
+
+https://github.com/zainbinsumait/fusion2urdf-ros2
