@@ -11,6 +11,9 @@ https://github.com/ros-simulation/gazebo_ros_pkgs/wiki/ROS-2-Migration:-Spawn-an
 
 **https://medium.com/creating-a-gazebo-simulation-with-ros2-for-your/introduction-8daf6efa12f4**
 
+https://www.youtube.com/watch?v=JAhr6KLcQ5o
+
+
 Steps to run this gazebo file :
 
 1.      First install ROS noetic or ROS2 foxy in your machine
