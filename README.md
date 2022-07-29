@@ -1,4 +1,79 @@
 **
+This project is an extension of the original one in the  repository OpenDog_v2_modification. a simulation of the same model of the robot in gazebo using ROS noetic and ROS2 foxy.
+
+Steps to run this gazebo file :
+
+1.      First install ROS noetic or ROS2 foxy in your machine
+
+ROS noetic:
+
+[http://wiki.ros.org/noetic/Installation/Ubuntu](http://wiki.ros.org/noetic/Installation/Ubuntu)
+
+ROS2 foxy
+
+[https://docs.ros.org/en/foxy/Installation.html](https://docs.ros.org/en/foxy/Installation.html)
+
+2.      After the creation of the workspace and installing all the tools, install gazebo :
+
+[https://classic.gazebosim.org/tutorials?tut=ros_installing&cat=connect_ros](https://classic.gazebosim.org/tutorials?tut=ros_installing&cat=connect_ros)
+
+[https://docs.ros.org/en/foxy/Tutorials/Intermediate/URDF/Building-a-Visual-Robot-Model-with-URDF-from-Scratch.html](https://docs.ros.org/en/foxy/Tutorials/Intermediate/URDF/Building-a-Visual-Robot-Model-with-URDF-from-Scratch.html)
+
+3.      Git clone the project in the /src folder of the main workspace ( keep the file corresponding to your ROS version).
+
+4.      Compile by typing (in the main workspace folder ) :
+			ROS noetic :
+```bash
+cd ~/catkin_ws
+
+catkin build 
+
+source devel/setup.bash
+
+```
+
+ROS2 Foxy :
+	  
+```bash
+colcon build 
+source install/setup.bash
+source install/local_setup.bash
+
+``` 
+
+5. type to launch the gazebo file :
+
+Noetic :
+```bash
+roslaunch full_body gazebo.launch
+
+``` 
+to load the controllers, type this command in a new terminal:
+
+```bash
+roslaunch full_body controller.launch
+
+``` 
+and in a new terminal you can run the python file which has the program of the movement. the file balance_corr.py is doing a balance movement. to run it type :
+
+```bash
+rosrun full_publisher balance_corr.py
+
+``` 
+
+
+Foxy :
+
+```bash
+ros2 launch full_gaz1_description gazebo.launch
+
+``` 
+
+the controller is not working well with me because of some issues in the ros_control and gazebo_ros_control packages. although, there's the controller configuration in the files and you can try again with it here are some useful links :
+
+
+
+
 
 Gazebo files Changement :
 
