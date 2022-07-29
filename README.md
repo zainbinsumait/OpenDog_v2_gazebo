@@ -104,8 +104,11 @@ Gazebo files Changement :
 while using the fusion 360 plugin to generate gazebo file of the model we have small issues in these files while combiling them using ros noetic. to solve these problems follow these steps :
   
 
-1.  in the file .gazebo in the URDF folder change the parameters mu1 and mu2 of the base link to a high number like 1500000000000 to increase the friction of the base with the ground so it doesn't move
-    
+1.  in the file .gazebo in the URDF folder change the parameters mu1 and mu2 of the base link to a high number like 1500000000000 to increase the friction of the base with the ground so it doesn't move.
+	in the same place you can change the color of the material for example : <1material>Gazebo/Black</ material>
+
+
+
 2.  just before the base link you will find a piece of code for the controller like this one :
     
 ```bash
